@@ -94,8 +94,8 @@ setup(
     package_data={"": ["LICENSE", "NOTICE"]},
     package_dir={"requests": "requests"},
     include_package_data=True,
-    python_requires=">=3.7",
-    install_requires=requires,
+    #python_requires=">=3.7",
+    #install_requires=requires,
     license=about["__license__"],
     zip_safe=False,
     classifiers=[
@@ -119,12 +119,12 @@ setup(
         "Topic :: Software Development :: Libraries",
     ],
     cmdclass={"test": PyTest},
-    tests_require=test_requirements,
-    extras_require={
-        "security": [],
-        "socks": ["PySocks>=1.5.6, !=1.5.7"],
-        "use_chardet_on_py3": ["chardet>=3.0.2,<6"],
-    },
+    #tests_require=test_requirements,
+    #extras_require={
+    #    "security": [],
+    #    "socks": ["PySocks>=1.5.6, !=1.5.7"],
+    #    "use_chardet_on_py3": ["chardet>=3.0.2,<6"],
+    #},
     project_urls={
         "Documentation": "https://requests.readthedocs.io",
         "Source": "https://github.com/psf/requests",
