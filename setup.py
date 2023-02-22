@@ -53,10 +53,10 @@ class PyTest(TestCommand):
 
 
 # 'setup.py publish' shortcut.
-if sys.argv[-1] == "publish":
-    os.system("python setup.py sdist bdist_wheel")
-    os.system("twine upload dist/*")
-    sys.exit()
+#if sys.argv[-1] == "publish":
+#    os.system("python setup.py sdist bdist_wheel")
+#    os.system("twine upload dist/*")
+#    sys.exit()
 
 requires = [
     "charset_normalizer>=2,<4",
